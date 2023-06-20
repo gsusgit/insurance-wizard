@@ -1,0 +1,18 @@
+body {
+  background: -webkit-gradient(linear, left top, right bottom, from(#f5e6d7), to(#FFFFFF)) fixed;
+  font-family: 'PT Sans', sans-serif !important;
+}
+
+.primary-brand-color {
+  color: #A82828;
+}
+
+.btn-primary {
+  background-color: #A82828 !important;
+  border-color: #A82828 !important;
+  font-size: large;
+}
+
+.icon {
+  font-size: 12px !important;
+}

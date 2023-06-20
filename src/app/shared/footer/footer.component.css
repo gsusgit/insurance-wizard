@@ -1,0 +1,6 @@
+footer {
+  background-color: transparent !important;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
