@@ -18,7 +18,8 @@ export class FormComponent {
     phone1: ['', [Validators.required, Validators.minLength(9), Validators.maxLength(15), Validators.pattern(this.vs.phonePattern)]],
     phone2: ['', [Validators.minLength(9), Validators.maxLength(15), Validators.pattern(this.vs.phonePattern)]],
     company: [''],
-    type: ['', [Validators.required]]
+    type: ['', [Validators.required]],
+    checkLegal: [false, Validators.requiredTrue]
   });
   public insurances = [
     { name: 'Todo riesgo sin franquicia' },
@@ -64,7 +65,9 @@ export class FormComponent {
   }
 
   public sendData() {
-
+    let data = this.userForm.value;
+    delete data.checkLegal;
+    // TODO open route 'confirm' with params 'data'
   }
 
 }

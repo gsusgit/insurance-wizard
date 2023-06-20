@@ -35,7 +35,7 @@
           </div>
           <div class="row">
             <div class="col-12 mb-2 mt-2">
-              <button class="btn btn-primary" (click)="nextStep(2)">Siguiente <span class="icon icon-arrow-right"></span></button>
+              <button class="btn btn-primary" (click)="nextStep(2)" [disabled]="form['name'].invalid || form['lastname1'].invalid">Siguiente <span class="icon icon-arrow-right"></span></button>
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@
         <div class="row">
           <div class="col-12 mb-2 mt-2">
             <button class="btn btn-primary" (click)="previousStep(1)"><span class="icon icon-arrow-left"></span> Anterior</button>
-            <button class="btn btn-primary" style="margin-left: 5px;" (click)="nextStep(3)">Siguiente <span class="icon icon-arrow-right"></span></button>
+            <button class="btn btn-primary" style="margin-left: 5px;" (click)="nextStep(3)" [disabled]="form['email'].invalid || form['phone1'].invalid">Siguiente <span class="icon icon-arrow-right"></span></button>
           </div>
         </div>
       </div>
@@ -112,9 +112,22 @@
           </div>
         </div>
         <div class="row">
+          <div class="col-md-4 mb-2 mt-4">
+            <div class="form-group">
+              <label for="checkLegal" class="ms-2 position-absolute">
+                <span class="h6 small px-1 label-privacy">
+                  He leído y acepto la <a target="_blank" routerLink="/privacy">política de privacidad</a> del sitio
+                </span>
+              </label>
+              <input class="form-check-input" type="checkbox" value="" formControlName="checkLegal" id="checkLegal" required
+                     [ngClass]="{'is-valid': !form['checkLegal'].errors && form['checkLegal'].touched,'is-invalid': form['checkLegal'].errors && form['checkLegal'].touched}">
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col-12 mb-2 mt-2">
             <button class="btn btn-primary" (click)="previousStep(2)"><span class="icon icon-arrow-left"></span> Anterior</button>
-            <button class="btn btn-primary" style="margin-left: 5px;" (click)="sendData()">Enviar <span class="icon icon-paper-plane"></span></button>
+            <button class="btn btn-primary" style="margin-left: 5px;" (click)="sendData()" [disabled]="form['type'].invalid || form['checkLegal'].invalid">Enviar <span class="icon icon-paper-plane"></span></button>
           </div>
         </div>
       </div>
