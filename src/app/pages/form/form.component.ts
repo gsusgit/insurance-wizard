@@ -18,8 +18,32 @@ export class FormComponent {
     phone1: ['', [Validators.required, Validators.minLength(9), Validators.maxLength(15), Validators.pattern(this.vs.phonePattern)]],
     phone2: ['', [Validators.minLength(9), Validators.maxLength(15), Validators.pattern(this.vs.phonePattern)]],
     company: [''],
-    type: ['Todo riesgo sin franquicia', [Validators.required]]
+    type: ['', [Validators.required]]
   });
+  public insurances = [
+    { name: 'Todo riesgo sin franquicia' },
+    { name: 'Todo riesgo con franquicia' },
+    { name: 'Seguro a terceros' }
+  ];
+  public brokers = [
+    { name: 'Allianz' },
+    { name: 'AXA' },
+    { name: 'Caser' },
+    { name: 'Catalana Occidente' },
+    { name: 'Direct Seguros' },
+    { name: 'Fénix Directo' },
+    { name: 'Generali' },
+    { name: 'Línea Directa' },
+    { name: 'Mapfre' },
+    { name: 'Mutua Madrileña' },
+    { name: 'Pelayo' },
+    { name: 'Qualitas Auto' },
+    { name: 'RACC' },
+    { name: 'Race' },
+    { name: 'Reale' },
+    { name: 'Verti' },
+    { name: 'Zurich' }
+  ];
 
   constructor(private formBuilder: FormBuilder,
               private vs: ValidatorsService,

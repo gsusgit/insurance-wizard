@@ -1,6 +1,6 @@
 body {
   background: -webkit-gradient(linear, left top, right bottom, from(#f5e6d7), to(#FFFFFF)) fixed;
-  font-family: 'PT Sans', sans-serif !important;
+  font-family: 'Roboto Condensed', sans-serif !important;
 }
 
 .primary-brand-color {
@@ -16,4 +16,8 @@ body {
 .icon {
   font-size: 12px !important;
   margin-left: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif !important;
 }
