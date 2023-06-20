@@ -44,21 +44,26 @@ export class FormComponent {
     { name: 'Verti' },
     { name: 'Zurich' }
   ];
+  public currentStep = 1;
 
   constructor(private formBuilder: FormBuilder,
               private vs: ValidatorsService,
               private router: Router) {
   }
 
-  get form() {
+  public get form() {
     return this.userForm.controls;
   }
 
-  sendData() {
-
+  public nextStep(stepNumber: number) {
+    this.currentStep = stepNumber;
   }
 
-  nextStep(stepNumber: number) {
+  public previousStep(stepNumber: number) {
+    this.currentStep = stepNumber;
+  }
+
+  public sendData() {
 
   }
 

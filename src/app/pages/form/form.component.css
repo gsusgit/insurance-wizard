@@ -33,7 +33,7 @@ select {
   background-color: transparent !important;
 }
 
-.form-steps-container {
+.form-steps-header {
   display: flex;
 }
 
@@ -89,6 +89,3 @@ h4 {
   pointer-events: none;
 }
 
-.btn {
-  margin-top: 15px;
-}
