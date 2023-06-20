@@ -1,0 +1,18 @@
+<h3 class="mb-4">Gracias {{userData.name}},</h3>
+<p>A continuación te mostramos los datos introducidos para que los revises.</p>
+<ul class="list-group">
+  <li class="list-group-item"><strong>Nombre</strong>: {{userData.name}}</li>
+  <li class="list-group-item"><strong>Primer apellido</strong>: {{userData.lastname1}}</li>
+  <li class="list-group-item"><strong>Primer apellido</strong>: {{userData.lastname2}}</li>
+  <li class="list-group-item"><strong>Email</strong>: {{userData.email}}</li>
+  <li class="list-group-item"><strong>Teléfono principal</strong>: {{userData.phone1}}</li>
+  <li class="list-group-item"><strong>Teléfono secundario</strong>: {{userData.phone2}}</li>
+  <li class="list-group-item"><strong>Compañía anterior</strong>: {{userData.company}}</li>
+  <li class="list-group-item"><strong>Tipo de seguro</strong>: {{userData.type}}
+</ul>
+<p class="mt-3">Si hay algún error o prefieres cambiar tus datos,
+  <a href="javascript:void(0)" routerLink="/form">haz click aquí</a> para comenzar de nuevo. Si, por el contrario, crees que todo está correcto confirma
+  el envío del formulario para que te busquemos la mejor oferta disponible.</p>
+<a href="javascript:void(0)" class="mt-1 btn btn-primary shadow-sm rounded" routerLink="/send">
+  Enviar <span class="icon icon-paper-plane"></span>
+</a>

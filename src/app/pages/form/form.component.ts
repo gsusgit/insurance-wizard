@@ -46,6 +46,7 @@ export class FormComponent {
     { name: 'Zurich' }
   ];
   public currentStep = 1;
+  public data: any;
 
   constructor(private formBuilder: FormBuilder,
               private vs: ValidatorsService,
@@ -65,9 +66,10 @@ export class FormComponent {
   }
 
   public sendData() {
-    let data = this.userForm.value;
-    delete data.checkLegal;
-    // TODO open route 'confirm' with params 'data'
+    this.data = this.userForm.value;
+    delete this.data.checkLegal;
+    localStorage.setItem('seguros_user_data', JSON.stringify(this.data));
+    this.router.navigate(['/confirm']);
   }
 
 }

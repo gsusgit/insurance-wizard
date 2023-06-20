@@ -5,12 +5,14 @@ import { SharedModule } from '../shared/shared.module';
 import { FormComponent } from './form/form.component';
 import { RouterLink } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ConfirmComponent } from './confirm/confirm.component';
 
 
 @NgModule({
   declarations: [
     WelcomeComponent,
-    FormComponent
+    FormComponent,
+    ConfirmComponent
   ],
   imports: [
     CommonModule,

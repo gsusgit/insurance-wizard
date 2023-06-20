@@ -95,9 +95,3 @@ h4 {
 .label-privacy {
   padding-left: 12px !important;
 }
-
-.label-privacy a {
-  text-decoration: none;
-  font-weight: 600;
-  color: #a82828;
-}
