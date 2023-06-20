@@ -4,6 +4,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { SharedModule } from '../shared/shared.module';
 import { FormComponent } from './form/form.component';
 import { RouterLink } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { RouterLink } from '@angular/router';
   imports: [
     CommonModule,
     SharedModule,
-    RouterLink
+    RouterLink,
+    ReactiveFormsModule
   ]
 })
 export class PagesModule { }

@@ -1,1 +1,128 @@
-<p>form works!</p>
+
+<div class="step-template">
+  <form class="needs-validation" [formGroup]="userForm" novalidate>
+    <div class="row form-step card m-0 p-1 pt-4 pb-4">
+      <div class="form-steps-container">
+        <div class="step-bubble step-incomplete step-current">1</div>
+        <h4>Datos personales</h4>
+      </div>
+      <div id="step-1">
+        <div class="col-md-4 mb-2">
+          <div class="form-group">
+            <label for="name" class="ms-2 position-absolute">
+              <span class="h6 small bg-white text-muted px-1">Nombre &#x2a;</span>
+            </label>
+            <input class="form-control mt-2" type="text" id="name" formControlName="name" required
+                   [ngClass]="{'is-valid': !form['name'].errors && form['name'].touched,'is-invalid': form['name'].errors && form['name'].touched}"/>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2">
+          <div class="form-group">
+            <label for="lastname1" class="ms-2 position-absolute">
+              <span class="h6 small bg-white text-muted px-1">Apellido 1 &#x2a;</span>
+            </label>
+            <input class="form-control mt-2" type="text" id="lastname1" formControlName="lastname1" required
+                   [ngClass]="{'is-valid': !form['lastname1'].errors && form['lastname1'].touched,'is-invalid': form['lastname1'].errors && form['lastname1'].touched}"/>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2">
+          <div class="form-group">
+            <label for="lastname2" class="ms-2 position-absolute">
+              <span class="h6 small bg-white text-muted px-1">Apellido 2</span>
+            </label>
+            <input class="form-control mt-2" type="text" id="lastname2" formControlName="lastname2"/>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2 mt-2">
+          <button class="btn btn-primary" (click)="nextStep(2)">Siguiente <span class="icon icon-arrow-right"></span></button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="row mt-4 form-step card m-0 p-1 pt-4 pb-4">
+    <div class="form-steps-container">
+      <div class="step-bubble step-incomplete step-current">2</div>
+      <h4>¿Cómo le contactamos?</h4>
+    </div>
+    <div id="step-2">
+      <div class="col-md-4 mb-2">
+        <div class="form-group">
+          <label for="email" class="ms-2 position-absolute">
+            <span class="h6 small bg-white text-muted px-1">Email &#x2a;</span>
+          </label>
+          <input class="form-control mt-2" type="email" id="email" formControlName="email" required
+                 [ngClass]="{'is-valid': !form['email'].errors && form['email'].touched,'is-invalid': form['email'].errors && form['email'].touched}"/>
+        </div>
+      </div>
+      <div class="col-md-4 mb-2">
+        <div class="form-group">
+          <label for="phone1" class="ms-2 position-absolute">
+            <span class="h6 small bg-white text-muted px-1">Teléfono principal &#x2a;</span>
+          </label>
+          <input class="form-control mt-2" type="text" id="phone1" formControlName="phone1" required
+                 [ngClass]="{'is-valid': !form['phone1'].errors && form['phone1'].touched,'is-invalid': form['phone1'].errors && form['phone1'].touched}"/>
+        </div>
+      </div>
+      <div class="col-md-4 mb-2">
+        <div class="form-group">
+          <label for="phone2" class="ms-2 position-absolute">
+            <span class="h6 small bg-white text-muted px-1">Otro teléfono</span>
+          </label>
+          <input class="form-control mt-2" type="text" id="phone2" formControlName="phone2" [ngClass]="{'is-valid': !form['phone2'].errors && form['phone2'].touched,'is-invalid': form['phone2'].errors && form['phone2'].touched}"/>
+        </div>
+      </div>
+      <div class="col-md-4 mb-2 mt-2">
+        <button class="btn btn-primary" (click)="nextStep(3)">Siguiente <span class="icon icon-arrow-right"></span></button>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4 form-step card m-0 p-1 pt-4 pb-4">
+    <div class="form-steps-container">
+      <div class="step-bubble step-incomplete step-current">3</div>
+      <h4>Información sobre su seguro</h4>
+    </div>
+    <div id="step-3">
+      <div class="col-md-4 mb-2">
+        <div class="form-group">
+          <label for="company" class="ms-2 position-absolute">
+            <span class="h6 small bg-white text-muted px-1">Anterior compañía</span>
+          </label>
+          <select class="form-control mt-2" formControlName="company" id="company">
+            <option value="Allianz">Allianz</option>
+            <option value="AXA">AXA</option>
+            <option value="Caser">Caser</option>
+            <option value="Catalana Occidente">Catalana Occidente</option>
+            <option value="Direct Seguros">Direct Seguros</option>
+            <option value="Fénix Directo">Fénix Directo</option>
+            <option value="Generali">Generali</option>
+            <option value="Línea Directa">Línea Directa</option>
+            <option value="Mapfre">Mapfre</option>
+            <option value="Mutua Madrileña">Mutua Madrileña</option>
+            <option value="Pelayo">Pelayo</option>
+            <option value="Qualitas Auto">Qualitas Auto</option>
+            <option value="RACC">RACC</option>
+            <option value="Race">Race</option>
+            <option value="Reale">Reale</option>
+            <option value="Verti">Verti</option>
+            <option value="Zurich">Zurich</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4 mb-2">
+        <div class="form-group">
+          <label for="type" class="ms-2 position-absolute">
+            <span class="h6 small bg-white text-muted px-1">Tipo de seguro &#x2a;</span>
+          </label>
+          <select class="form-control mt-2" formControlName="type" id="type" required>
+            <option value="Todo riesgo sin franquicia">Todo riesgo sin franquicia</option>
+            <option value="Todo riesgo con franquicia">Todo riesgo con franquicia</option>
+            <option value="A terceros">A terceros</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-md-4 mb-2 mt-2">
+        <button class="btn btn-primary" (click)="sendData()">Enviar <span class="icon icon-paper-plane"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
