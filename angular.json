@@ -15,7 +15,7 @@
           "options": {
             "localize": false,
             "aot": true,
-            "outputPath": "dist/insurance-wizard",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
