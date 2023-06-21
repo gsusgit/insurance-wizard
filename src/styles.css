@@ -58,3 +58,15 @@ footer {
 .btn.shadow-sm {
   box-shadow: 0 .175rem .95rem rgba(0,0,0,.380)!important;
 }
+
+p, .btn {
+  font-size: 1.1em !important;
+}
+
+footer p {
+  font-size: inherit !important;
+}
+
+.list-group-item {
+  background-color: #f3f3f3 !important;
+}
