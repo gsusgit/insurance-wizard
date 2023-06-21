@@ -2,7 +2,7 @@
   <form class="needs-validation" [formGroup]="userForm" novalidate>
     <div *ngIf="currentStep===1" id="step-1" class="mt-5">
       <div class="form-steps-header">
-        <div class="step-bubble step-incomplete step-current">1</div>
+        <div class="step-bubble">1</div>
         <h4>Datos personales</h4>
       </div>
       <div class="form-step card m-0 p-1 pb-4">
@@ -35,7 +35,7 @@
           </div>
           <div class="row">
             <div class="col-12 mb-2 mt-2">
-              <button class="btn btn-primary" (click)="nextStep(2)" [disabled]="form['name'].invalid || form['lastname1'].invalid">Siguiente <span class="icon right icon-arrow-right"></span></button>
+              <button class="btn btn-primary shadow-sm rounded" (click)="nextStep(2)" [disabled]="form['name'].invalid || form['lastname1'].invalid">Siguiente <span class="icon right icon-arrow-right"></span></button>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@
     </div>
     <div *ngIf="currentStep===2" id="step-2" class="mt-5">
       <div class="form-steps-header">
-        <div class="step-bubble step-incomplete step-current">2</div>
+        <div class="step-bubble">2</div>
         <h4>¿Cómo le contactamos?</h4>
       </div>
       <div class="form-step card m-0 p-1 pb-4">
@@ -77,15 +77,15 @@
         </div>
         <div class="row">
           <div class="col-12 mb-2 mt-2">
-            <button class="btn btn-primary" (click)="previousStep(1)"><span class="icon left icon-arrow-left"></span> Anterior</button>
-            <button class="btn btn-primary" style="margin-left: 5px;" (click)="nextStep(3)" [disabled]="form['email'].invalid || form['phone1'].invalid">Siguiente <span class="icon right icon-arrow-right"></span></button>
+            <button class="btn btn-primary shadow-sm rounded" (click)="previousStep(1)"><span class="icon left icon-arrow-left"></span> Anterior</button>
+            <button class="btn btn-primary shadow-sm rounded" style="margin-left: 5px;" (click)="nextStep(3)" [disabled]="form['email'].invalid || form['phone1'].invalid">Siguiente <span class="icon right icon-arrow-right"></span></button>
           </div>
         </div>
       </div>
     </div>
     <div *ngIf="currentStep===3" id="step-3" class="mt-5">
       <div class="form-steps-header mt-4">
-        <div class="step-bubble step-incomplete step-current">3</div>
+        <div class="step-bubble">3</div>
         <h4>Información sobre su seguro</h4>
       </div>
       <div class="form-step card m-0 p-1 pb-4">
@@ -126,8 +126,8 @@
         </div>
         <div class="row">
           <div class="col-12 mb-2 mt-2">
-            <button class="btn btn-primary" (click)="previousStep(2)"><span class="icon left icon-arrow-left"></span> Anterior</button>
-            <button class="btn btn-primary" style="margin-left: 5px;" (click)="sendData()" [disabled]="form['type'].invalid || form['checkLegal'].invalid">Enviar <span class="icon right icon-paper-plane"></span></button>
+            <button class="btn btn-primary shadow-sm rounded" (click)="previousStep(2)"><span class="icon left icon-arrow-left"></span> Anterior</button>
+            <button class="btn btn-primary shadow-sm rounded" style="margin-left: 5px;" (click)="sendData()" [disabled]="form['type'].invalid || form['checkLegal'].invalid">Enviar <span class="icon right icon-paper-plane"></span></button>
           </div>
         </div>
       </div>

@@ -54,3 +54,7 @@ footer {
   position: sticky !important;
   top: 100vh !important;
 }
+
+.btn.shadow-sm {
+  box-shadow: 0 .175rem .95rem rgba(0,0,0,.380)!important;
+}

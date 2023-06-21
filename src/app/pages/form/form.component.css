@@ -4,7 +4,7 @@
 
 .form-control {
   padding: 0.575rem 0.75rem;
-  border: 2px solid #c6c6c6;
+  border: 2px solid #777777;
   border-radius: 5px;
   margin-top: 15px !important;
   margin-bottom: 15px !important;
@@ -57,7 +57,7 @@ h4 {
 }
 
 .step-bubble {
-  padding: 12px;
+  padding: 10px;
   border: 3px solid #A82828;
   width: 12px;
   height: 12px;
@@ -65,10 +65,13 @@ h4 {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: #A82828;
   font-size: 1em;
   cursor: pointer;
   user-select: none;
+  background: #A82828;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 
 .step-divider {
@@ -76,16 +79,6 @@ h4 {
   background: #A82828;
   flex: 1;
   margin: 0px 10px;
-}
-
-.step-current, .step-complete {
-  background: #A82828;
-  color: #FFFFFF;
-}
-
-.step-incomplete {
-  cursor: not-allowed;
-  pointer-events: none;
 }
 
 #checkLegal {
