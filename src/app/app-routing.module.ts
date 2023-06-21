@@ -6,6 +6,8 @@ import { ConfirmComponent } from "./pages/confirm/confirm.component";
 import { SendComponent } from "./pages/send/send.component";
 import { PrivacyComponent } from "./pages/privacy/privacy.component";
 import { NotFoundComponent } from "./pages/notfound/notfound.component";
+import { CookiesComponent } from "./pages/cookies/cookies.component";
+import { LegalComponent } from "./pages/legal/legal.component";
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -13,6 +15,8 @@ const routes: Routes = [
   { path: 'confirm', component: ConfirmComponent },
   { path: 'send', component: SendComponent },
   { path: 'privacy', component: PrivacyComponent },
+  { path: 'cookies', component: CookiesComponent },
+  { path: 'legal', component: LegalComponent },
   { path: 'notfound', component: NotFoundComponent },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
   { path: '**', pathMatch: 'full', redirectTo: 'notfound' }

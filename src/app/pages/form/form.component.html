@@ -35,7 +35,7 @@
           </div>
           <div class="row">
             <div class="col-12 mb-2 mt-2">
-              <button (keydown.enter)="$event.preventDefault()" class="btn btn-primary shadow-sm rounded" (click)="nextStep(2)" [disabled]="form['name'].invalid || form['lastname1'].invalid">Siguiente <span class="icon right icon-arrow-right"></span></button>
+              <button (keydown.enter)="$event.preventDefault()" class="btn btn-primary shadow-sm rounded" (click)="nextStep(2)" [disabled]="form['name'].invalid || form['lastname1'].invalid">Siguiente <i class="right bi bi-chevron-right"></i></button>
             </div>
           </div>
         </div>
@@ -77,8 +77,8 @@
         </div>
         <div class="row">
           <div class="col-12 mb-2 mt-2">
-            <button (keydown.enter)="$event.preventDefault()" class="btn btn-primary shadow-sm rounded" (click)="previousStep(1)"><span class="icon left icon-arrow-left"></span> Anterior</button>
-            <button (keydown.enter)="$event.preventDefault()" class="btn btn-primary shadow-sm rounded" style="margin-left: 5px;" (click)="nextStep(3)" [disabled]="form['email'].invalid || form['phone1'].invalid">Siguiente <span class="icon right icon-arrow-right"></span></button>
+            <button (keydown.enter)="$event.preventDefault()" class="btn btn-primary shadow-sm rounded" (click)="previousStep(1)"><i class="left bi bi-chevron-left"></i> Anterior</button>
+            <button (keydown.enter)="$event.preventDefault()" class="btn btn-primary shadow-sm rounded" style="margin-left: 5px;" (click)="nextStep(3)" [disabled]="form['email'].invalid || form['phone1'].invalid">Siguiente <i class="right bi bi-chevron-right"></i></button>
           </div>
         </div>
       </div>
@@ -126,8 +126,8 @@
         </div>
         <div class="row">
           <div class="col-12 mb-2 mt-2">
-            <button (keydown.enter)="$event.preventDefault()" class="btn btn-primary shadow-sm rounded" (click)="previousStep(2)"><span class="icon left icon-arrow-left"></span> Anterior</button>
-            <button (keydown.enter)="$event.preventDefault()" class="btn btn-primary shadow-sm rounded" style="margin-left: 5px;" (click)="sendData()" [disabled]="form['type'].invalid || form['checkLegal'].invalid">Enviar <span class="icon right icon-paper-plane"></span></button>
+            <button (keydown.enter)="$event.preventDefault()" class="btn btn-primary shadow-sm rounded" (click)="previousStep(2)"><i class="left bi bi-chevron-left"></i> Anterior</button>
+            <button (keydown.enter)="$event.preventDefault()" class="btn btn-primary shadow-sm rounded" style="margin-left: 5px;" (click)="sendData()" [disabled]="form['type'].invalid || form['checkLegal'].invalid">Finalizar <i class="right bi bi-chevron-right"></i></button>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
 body {
-  /*background: -webkit-gradient(linear, left top, right bottom, from(#f5e6d7), to(#FFFFFF)) fixed;*/
   font-family: 'Roboto Condensed', sans-serif !important;
 }
 
@@ -17,17 +18,24 @@ body {
   font-size: 12px !important;
 }
 
-.icon.left {
+.bi.left {
   margin-right: 10px;
 }
 
-.icon.right {
+.bi.right {
   margin-left: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .btn {
   font-family: 'Roboto', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: bold !important;
+}
+
+.btn {
+  font-weight: 500 !important;
 }
 
 p a, label a {

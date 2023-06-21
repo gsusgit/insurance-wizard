@@ -36,8 +36,7 @@ const cookieConfig:NgcCookieConsentConfig = {
   },
   elements:{
     messagelink: `
-    <span id="cookieconsent:desc" class="cc-message">Empleamos cookies para proporcionarle la mejor experiencia de uso de la web.
-    </span>
+    <span id="cookieconsent:desc" class="cc-message">Empleamos cookies para proporcionarle la mejor experiencia de uso de la web. Más información <a href="/#/cookies">en este enlace</a>.</span>
     `
   }
 };

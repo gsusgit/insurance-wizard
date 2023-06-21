@@ -9,6 +9,8 @@ import { ConfirmComponent } from './confirm/confirm.component';
 import { SendComponent } from './send/send.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { NotFoundComponent } from "./notfound/notfound.component";
+import { CookiesComponent } from './cookies/cookies.component';
+import { LegalComponent } from './legal/legal.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { NotFoundComponent } from "./notfound/notfound.component";
     ConfirmComponent,
     SendComponent,
     PrivacyComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    CookiesComponent,
+    LegalComponent
   ],
   imports: [
     CommonModule,
