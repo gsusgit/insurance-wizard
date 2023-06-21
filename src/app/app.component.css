@@ -1,13 +1,1 @@
-@media (max-width: 768px) {
-  .main {
-    min-height: 66vh;
-    margin-bottom: 3em;
-  }
-}
 
-@media (min-width: 769px) {
-  .main {
-    min-height: 70vh;
-    margin-bottom: 3em;
-  }
-}

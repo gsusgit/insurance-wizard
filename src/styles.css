@@ -27,6 +27,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif !important;
+  font-weight: bold !important;
 }
 
 p a, label a {
@@ -45,4 +46,11 @@ p a, label a {
   .container {
     max-width: 960px !important;
   }
+}
+
+html, body { height: 100% !important;}
+
+footer {
+  position: sticky !important;
+  top: 100vh !important;
 }
