@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ValidatorsService } from '../../services/validators.service';
+import { insurances } from "../../models/insurance/insurance-data.store";
+import { brokers } from "../../models/broker/broker-data.store";
 
 @Component({
   selector: 'app-form',
@@ -21,30 +23,8 @@ export class FormComponent {
     type: ['', [Validators.required]],
     checkLegal: [false, Validators.requiredTrue]
   });
-  public insurances = [
-    { name: 'Todo riesgo sin franquicia' },
-    { name: 'Todo riesgo con franquicia' },
-    { name: 'Seguro a terceros' }
-  ];
-  public brokers = [
-    { name: 'Allianz' },
-    { name: 'AXA' },
-    { name: 'Caser' },
-    { name: 'Catalana Occidente' },
-    { name: 'Direct Seguros' },
-    { name: 'Fénix Directo' },
-    { name: 'Generali' },
-    { name: 'Línea Directa' },
-    { name: 'Mapfre' },
-    { name: 'Mutua Madrileña' },
-    { name: 'Pelayo' },
-    { name: 'Qualitas Auto' },
-    { name: 'RACC' },
-    { name: 'Race' },
-    { name: 'Reale' },
-    { name: 'Verti' },
-    { name: 'Zurich' }
-  ];
+  public insurances = insurances;
+  public brokers = brokers;
   public currentStep = 1;
   public data: any;
 
