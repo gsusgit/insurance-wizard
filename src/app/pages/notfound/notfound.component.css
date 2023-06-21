@@ -1,0 +1,6 @@
+.text-error {
+  color: #A82828;
+  text-shadow: rgb(199 65 65 / 30%) 5px 1px, rgb(203 181 181 / 20%) 10px 3px;
+  font-size: 84px;
+  line-height: 90px;
+}

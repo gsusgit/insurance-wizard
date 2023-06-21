@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { SendComponent } from './send/send.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { NotFoundComponent } from "./notfound/notfound.component";
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
     FormComponent,
     ConfirmComponent,
     SendComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    NotFoundComponent
   ],
   imports: [
     CommonModule,
