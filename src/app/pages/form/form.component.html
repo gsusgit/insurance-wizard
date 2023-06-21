@@ -62,7 +62,7 @@
               <label for="phone1" class="ms-2 position-absolute">
                 <span class="h6 small bg-white px-1">Teléfono principal &#x2a;</span>
               </label>
-              <input class="form-control mt-2" type="text" id="phone1" formControlName="phone1" required
+              <input class="form-control mt-2" type="text" id="phone1" formControlName="phone1" maxlength="9" required
                      [ngClass]="{'is-valid': !form['phone1'].errors && form['phone1'].touched,'is-invalid': form['phone1'].errors && form['phone1'].touched}"/>
             </div>
           </div>
@@ -71,7 +71,7 @@
               <label for="phone2" class="ms-2 position-absolute">
                 <span class="h6 small bg-white px-1">Otro teléfono</span>
               </label>
-              <input class="form-control mt-2" type="text" id="phone2" formControlName="phone2" [ngClass]="{'is-valid': !form['phone2'].errors && form['phone2'].touched,'is-invalid': form['phone2'].errors && form['phone2'].touched}"/>
+              <input class="form-control mt-2" type="text" id="phone2" formControlName="phone2" maxlength="9" [ngClass]="{'is-valid': !form['phone2'].errors && form['phone2'].touched,'is-invalid': form['phone2'].errors && form['phone2'].touched}"/>
             </div>
           </div>
         </div>

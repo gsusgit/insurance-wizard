@@ -15,8 +15,8 @@ export class FormComponent {
     lastname1: ['', [Validators.required]],
     lastname2: [''],
     email: ['', [Validators.required, Validators.pattern(this.vs.emailPattern)]],
-    phone1: ['', [Validators.required, Validators.minLength(9), Validators.maxLength(15), Validators.pattern(this.vs.phonePattern)]],
-    phone2: ['', [Validators.minLength(9), Validators.maxLength(15), Validators.pattern(this.vs.phonePattern)]],
+    phone1: ['', [Validators.required, Validators.minLength(9), Validators.maxLength(9), Validators.pattern(this.vs.phonePattern)]],
+    phone2: ['', [Validators.minLength(9), Validators.maxLength(9), Validators.pattern(this.vs.phonePattern)]],
     company: [''],
     type: ['', [Validators.required]],
     checkLegal: [false, Validators.requiredTrue]

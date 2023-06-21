@@ -6,13 +6,17 @@ import { FormComponent } from './form/form.component';
 import { RouterLink } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ConfirmComponent } from './confirm/confirm.component';
+import { SendComponent } from './send/send.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 
 @NgModule({
   declarations: [
     WelcomeComponent,
     FormComponent,
-    ConfirmComponent
+    ConfirmComponent,
+    SendComponent,
+    PrivacyComponent
   ],
   imports: [
     CommonModule,

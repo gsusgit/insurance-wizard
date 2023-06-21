@@ -27,3 +27,9 @@ p a, label a {
   font-weight: 600 !important;
   color: #a82828 !important;
 }
+
+.accordion-button:not(.collapsed) {
+  color: #a82828 !important;
+  font-weight: 600 !important;
+  background-color: transparent !important;
+}
