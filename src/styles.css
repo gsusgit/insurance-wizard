@@ -15,6 +15,13 @@ body {
 
 .icon {
   font-size: 12px !important;
+}
+
+.icon.left {
+  margin-right: 10px;
+}
+
+.icon.right {
   margin-left: 10px;
 }
 
