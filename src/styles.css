@@ -40,3 +40,9 @@ p a, label a {
   font-weight: 600 !important;
   background-color: transparent !important;
 }
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
