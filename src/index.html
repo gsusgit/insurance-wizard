@@ -14,10 +14,6 @@
 </head>
 <body>
 <style>
-  #chat-widget-container {
-    bottom: auto !important;
-    top: 0 !important;
-  }
   .cc-highlight .cc-btn:first-child {
     background-color: #141414;
     border-color: transparent;
@@ -36,9 +32,20 @@
     .cc-window.cc-floating {
       padding-left: 15px;
       padding-right: 15px;
+      top: auto;
+      bottom: 0;
     }
     .cc-window .cc-message {
       margin-bottom: 2em;
+    }
+    #chat-widget-container {
+      bottom: auto !important;
+      top: 0 !important;
+    }
+  }
+  @media (min-width: 768px) {
+    .cc-window.cc-floating {
+      padding: 1em;
     }
   }
 </style>

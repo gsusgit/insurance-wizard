@@ -18,7 +18,7 @@ const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
     domain: 'localhost'
   },
-  position: 'bottom-right',
+  position: 'top-right',
   palette: {
     popup: {
       background: '#000000'

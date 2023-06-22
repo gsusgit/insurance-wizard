@@ -53,7 +53,7 @@ p a, label a {
 
 @media (min-width: 1024px) {
   .container {
-    max-width: 960px !important;
+    max-width: 1140px !important;
   }
 }
 
