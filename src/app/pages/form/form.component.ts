@@ -37,14 +37,6 @@ export class FormComponent {
     return this.userForm.controls;
   }
 
-  public nextStep(stepNumber: number) {
-    this.currentStep = stepNumber;
-  }
-
-  public previousStep(stepNumber: number) {
-    this.currentStep = stepNumber;
-  }
-
   public sendData() {
     this.data = this.userForm.value;
     delete this.data.checkLegal;
