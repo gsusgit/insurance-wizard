@@ -40,18 +40,15 @@ export class AppComponent implements OnInit, OnDestroy {
 
     this.initializingSubscription = this.cookieService.initializing$.subscribe(
       (event: NgcInitializingEvent) => {
-        console.log(`initializing: ${JSON.stringify(event)}`);
       });
 
     this.initializedSubscription = this.cookieService.initialized$.subscribe(
       () => {
-        console.log(`initialized: ${JSON.stringify(event)}`);
       });
 
     this.initializationErrorSubscription = this.cookieService.initializationError$.subscribe(
       (event: NgcInitializationErrorEvent) => {
         // the cookieconsent has failed to initialize...
-        console.log(`initializationError: ${JSON.stringify(event.error?.message)}`);
       });
 
     this.statusChangeSubscription = this.cookieService.statusChange$.subscribe(
