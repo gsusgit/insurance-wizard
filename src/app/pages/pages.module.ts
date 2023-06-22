@@ -11,6 +11,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { NotFoundComponent } from "./notfound/notfound.component";
 import { CookiesComponent } from './cookies/cookies.component';
 import { LegalComponent } from './legal/legal.component';
+import { TermsComponent } from './terms/terms.component';
+import { FaqsComponent } from './faqs/faqs.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { LegalComponent } from './legal/legal.component';
     PrivacyComponent,
     NotFoundComponent,
     CookiesComponent,
-    LegalComponent
+    LegalComponent,
+    TermsComponent,
+    FaqsComponent
   ],
   imports: [
     CommonModule,

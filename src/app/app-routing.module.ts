@@ -8,6 +8,8 @@ import { PrivacyComponent } from "./pages/privacy/privacy.component";
 import { NotFoundComponent } from "./pages/notfound/notfound.component";
 import { CookiesComponent } from "./pages/cookies/cookies.component";
 import { LegalComponent } from "./pages/legal/legal.component";
+import { TermsComponent } from './pages/terms/terms.component';
+import { FaqsComponent } from './pages/faqs/faqs.component';
 
 const routes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'privacy', component: PrivacyComponent },
   { path: 'cookies', component: CookiesComponent },
   { path: 'legal', component: LegalComponent },
+  { path: 'terms', component: TermsComponent },
+  { path: 'faqs', component: FaqsComponent },
   { path: 'notfound', component: NotFoundComponent },
   { path: '', pathMatch: 'full', redirectTo: 'welcome' },
   { path: '**', pathMatch: 'full', redirectTo: 'notfound' }
@@ -24,7 +28,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { useHash: true })
+    RouterModule.forRoot(routes, {
+      useHash: true,
+      scrollPositionRestoration: 'enabled'
+    })
   ],
   exports: [RouterModule]
 })
