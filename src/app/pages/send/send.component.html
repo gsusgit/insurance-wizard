@@ -1,4 +1,5 @@
-<div class="mt-5 animated fadeIn">
+<div *ngIf="loading" id="overlay"></div>
+<div class="mt-5 mb-5 animated fadeIn">
   <div *ngIf="loading" class="text-center">
     <img src="assets/images/loading.svg" alt="Cargando"/>
   </div>

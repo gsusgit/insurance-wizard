@@ -1,4 +1,4 @@
-import { BrokerModel } from "./broker.model";
+import { BrokerModel } from './broker.model';
 
 export const brokers: BrokerModel[] = [
   { name: 'Allianz' },

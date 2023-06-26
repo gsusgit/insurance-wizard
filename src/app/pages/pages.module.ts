@@ -8,11 +8,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { SendComponent } from './send/send.component';
 import { PrivacyComponent } from './privacy/privacy.component';
-import { NotFoundComponent } from "./notfound/notfound.component";
+import { NotFoundComponent } from './notfound/notfound.component';
 import { CookiesComponent } from './cookies/cookies.component';
 import { LegalComponent } from './legal/legal.component';
 import { TermsComponent } from './terms/terms.component';
 import { FaqsComponent } from './faqs/faqs.component';
+import { PagesRoutingModule } from './pages-routing.module';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { FaqsComponent } from './faqs/faqs.component';
     CommonModule,
     SharedModule,
     RouterLink,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    PagesRoutingModule
   ]
 })
 export class PagesModule { }

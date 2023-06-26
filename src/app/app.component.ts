@@ -1,11 +1,11 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { TranslateService } from "@ngx-translate/core";
+import { TranslateService } from '@ngx-translate/core';
 import {
   NgcCookieConsentService,
   NgcInitializationErrorEvent,
   NgcInitializingEvent, NgcNoCookieLawEvent,
   NgcStatusChangeEvent
-} from "ngx-cookieconsent";
+} from 'ngx-cookieconsent';
 import { Subscription }   from 'rxjs';
 
 @Component({

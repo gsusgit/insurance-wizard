@@ -1,4 +1,4 @@
-import { InsuranceModel} from "./insurance.model";
+import { InsuranceModel} from './insurance.model';
 
 export const insurances: InsuranceModel[] = [
   { name: 'Todo riesgo sin franquicia' },

@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ValidatorsService } from '../../services/validators.service';
-import { insurances } from "../../models/insurance/insurance-data.store";
-import { brokers } from "../../models/broker/broker-data.store";
+import { insurances } from '../../models/insurance/insurance-data.store';
+import { brokers } from '../../models/broker/broker-data.store';
 
 @Component({
   selector: 'app-form',

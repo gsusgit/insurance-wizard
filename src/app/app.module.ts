@@ -6,9 +6,9 @@ import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './pages/pages.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsent';
-import { HttpClient, HttpClientModule } from "@angular/common/http";
-import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
-import { TranslateHttpLoader } from "@ngx-translate/http-loader";
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -32,7 +32,7 @@ const cookieConfig:NgcCookieConsentConfig = {
   type: 'opt-out',
   layout: 'my-custom-layout',
   layouts: {
-    "my-custom-layout": '{{messagelink}}{{compliance}}'
+    'my-custom-layout': '{{messagelink}}{{compliance}}'
   },
   elements:{
     messagelink: `
